@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/images/logo-black.svg" type="image/x-icon">
+  <title>Fynz</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/styles/index.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav">
+      <button class="nav__hamburger" id="hamburgerButton" aria-label="Abrir menu" aria-expanded="false">
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+      </button>
+      <ul class="nav__list" id="navList">
+        <li class="nav__item"><a href="/consorcio" class="global-text nav__link">Consórcio</a></li>
+        <li class="nav__item"><a href="/saude" class="global-text nav__link">Saúde</a></li>
+        <li class="nav__item"><a href="/seguro" class="global-text nav__link">Seguro</a></li>
+        <li class="nav__item"><a href="/responsabilidade-civil" class="global-text nav__link">Responsabilidade Civil</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__logo-container">
+      <img src="./assets/images/logo-black.svg" alt="Lemonade Logo" class="header__logo">
+    </div>
+
+    <div class="header__account">
+      <a href="#" class="global-button">Simular</a>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <div class="hero__content">
+        <h1 class="global-title hero__title">
+          Proteção inteligente, sem complicação
+        </h1>
+        <p class="global-text">
+          Simule consórcios e planos de saúde em poucos cliques ou solicite sua
+          cotação personalizada para seguros auto, residencial, vida e mais.
+        </p>
+        <button class="global-button hero__button">Simular agora</button>
+      </div>
+
+      <div class="hero__background">
+        <div class="left">
+          <img alt="Lemonade House" side="left" 
+            width="615" height="471" decoding="async"
+            class="hero__background-image hero__background-image--left" 
+            src="./assets/images/hero-image-left-x1.svg"
+          >
+  
+          <img 
+            alt="Lemonade House" side="left" 
+            width="615" height="471" decoding="async"
+            src="./assets/images/hero-image-left-x2.svg"
+          >
+        </div>
+
+      </div>
+    </section>
+
+    <section class="ratings-section">
+      <h2 class="global-title">A Seguradora 5 Estrelas do Brasil</h2>
+
+      <p class="global-text ratings-section__text">
+        Nossos clientes avaliam nossos serviços com excelência. Oferecemos
+        uma experiência digital simples, transparente e ágil – do consórcio
+        ao seguro saúde e muito mais.
+      </p>
+
+      <div class="ratings-section__stars">
+        <svg class="star-icon" viewBox="0 0 576 512" fill="currentColor">
+          <path
+            d="M316.9 18C311.6 7 300.4 0 288.8 0s-22.8 7-28.1 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12.1 3.4 24.3 13.5 31.4s23.5 7.6 34.1 4.1L288.8 439.5l123.3 69.3c10.6 3.5 22.9 3.3 34.1-4.1s15.5-19.3 13.5-31.4L438.5 329 542.7 225.9c8.6-8.5 11.2-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+        </svg>
+        <svg class="star-icon" viewBox="0 0 576 512" fill="currentColor">
+          <path
+            d="M316.9 18C311.6 7 300.4 0 288.8 0s-22.8 7-28.1 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12.1 3.4 24.3 13.5 31.4s23.5 7.6 34.1 4.1L288.8 439.5l123.3 69.3c10.6 3.5 22.9 3.3 34.1-4.1s15.5-19.3 13.5-31.4L438.5 329 542.7 225.9c8.6-8.5 11.2-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+        </svg>
+        <svg class="star-icon" viewBox="0 0 576 512" fill="currentColor">
+          <path
+            d="M316.9 18C311.6 7 300.4 0 288.8 0s-22.8 7-28.1 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12.1 3.4 24.3 13.5 31.4s23.5 7.6 34.1 4.1L288.8 439.5l123.3 69.3c10.6 3.5 22.9 3.3 34.1-4.1s15.5-19.3 13.5-31.4L438.5 329 542.7 225.9c8.6-8.5 11.2-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+        </svg>
+        <svg class="star-icon" viewBox="0 0 576 512" fill="currentColor">
+          <path
+            d="M316.9 18C311.6 7 300.4 0 288.8 0s-22.8 7-28.1 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12.1 3.4 24.3 13.5 31.4s23.5 7.6 34.1 4.1L288.8 439.5l123.3 69.3c10.6 3.5 22.9 3.3 34.1-4.1s15.5-19.3 13.5-31.4L438.5 329 542.7 225.9c8.6-8.5 11.2-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+        </svg>
+        <svg class="star-icon" viewBox="0 0 576 512" fill="currentColor">
+          <path
+            d="M316.9 18C311.6 7 300.4 0 288.8 0s-22.8 7-28.1 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12.1 3.4 24.3 13.5 31.4s23.5 7.6 34.1 4.1L288.8 439.5l123.3 69.3c10.6 3.5 22.9 3.3 34.1-4.1s15.5-19.3 13.5-31.4L438.5 329 542.7 225.9c8.6-8.5 11.2-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+        </svg>
+      </div>
+
+      <div class="swiper-container" id="slide-testimonial">
+        <div class="swiper-wrapper"></div>
+      </div>
+    </section>
+
+    <section class="bundle-section">
+      <div class="global-container">
+        <div class="bundle-section__content">
+          <h2 class="global-title">Soluções inteligentes para sua proteção e futuro</h2> <br>
+          <h3 class="global-text">
+            <dotlottie-player src="https://lottie.host/86dc3fea-c3e0-4d7b-81db-73b54efa2e45/OOs6vJ47T0.lottie" background="transparent" speed="1"
+              style="width: 48px; height: 48px" loop autoplay></dotlottie-player>
+            Simule, compare e fale com um consultor.
+          </h3>
+
+          <div class="bundle-cards">
+            <div class="bundle-card">
+              <img src="/assets/images/7338017.jpg" alt="Ícone Consórcio" class="bundle-card__icon">
+              <h3 class="bundle-card__title">Consórcio</h3>
+              <p class="global-text bundle-card__description">
+                Simule seu consórcio de automóvel ou imóvel e planeje seu futuro com segurança.
+              </p>
+              <button class="global-button">Saiba mais</button>
+            </div>
+
+            <div class="bundle-card">
+              <img src="./assets/images/5016026.jpg" alt="Ícone Saúde" class="bundle-card__icon">
+              <h3 class="bundle-card__title">Plano de Saúde</h3>
+              <p class="global-text bundle-card__description">
+                Encontre o plano ideal com base na sua idade, localização e necessidades.
+              </p>
+              <button class="global-button">Saiba mais</button>
+            </div>
+
+            <div class="bundle-card">
+              <img src="./assets/images/6514377.jpg" alt="Ícone Seguros" class="bundle-card__icon">
+              <h3 class="bundle-card__title">Seguros</h3>
+              <p class="global-text bundle-card__description">
+                Proteja o que é importante: auto, residência, vida e responsabilidade civil.
+              </p>
+              <button class="global-button">Saiba mais</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="instant-everything-section">
+      <div class="instant-everything-content">
+        <h2 class="instant-everything-title">Simulação Instantânea</h2>
+        <p class="instant-everything-subtitle">
+          Nossa inteligência artificial simpática, encontra a melhor proposta de consórcio ou plano de saúde para você.
+          <br>Rápido, fácil e feito sob medida.
+        </p>
+
+        <img src="./assets/images/simulacao.svg" alt="iPhone Mockup" class="instant-everything-phone">
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="global-container">
+        <span class="faq-section__tag">Dúvidas Frequentes</span>
+        <h2 class="global-title">Perguntas Frequentes</h2>
+
+        <ul class="faq-list">
+          <li class="faq-item">
+            <div class="faq-item__header">
+              <span class="global-text">1. Como funciona a simulação de consórcio?</span>
+              <span class="global-text">-</span>
+            </div>
+            <div class="faq-item__content">
+              <p class="global-text">
+                Basta selecionar se você deseja um consórcio de automóvel ou imóvel, informar alguns dados básicos e o sistema irá apresentar valores estimados.
+                Após a simulação, nossa equipe entrará em contato para apresentar as melhores opções.
+              </p>
+            </div>
+          </li>
+
+          <li class="faq-item">
+            <div class="faq-item__header">
+              <span class="global-text">2. A simulação de plano de saúde é gratuita?</span>
+              <span class="global-text">+</span>
+            </div>
+            <div class="faq-item__content">
+              <p class="global-text">
+                Sim! A simulação é 100% gratuita e sem compromisso. Você informa sua idade, cidade, bairro e se possui CNPJ. Com isso, conseguimos apresentar
+                planos de saúde com cobertura nos hospitais e laboratórios da sua região.
+              </p>
+            </div>
+          </li>
+
+          <li class="faq-item">
+            <div class="faq-item__header">
+              <span class="global-text">3. Como faço para contratar um seguro de vida ou residência?</span>
+              <span class="global-text">+</span>
+            </div>
+            <div class="faq-item__content">
+              <p class="global-text">
+                Basta preencher o formulário com seus dados e aguardar o contato do nosso consultor. Ele irá apresentar planos personalizados de acordo com seu
+                perfil e suas necessidades.
+              </p>
+            </div>
+          </li>
+
+          <li class="faq-item">
+            <div class="faq-item__header">
+              <span class="global-text">4. Os dados informados nas simulações são seguros?</span>
+              <span class="global-text">+</span>
+            </div>
+            <div class="faq-item__content">
+              <p class="global-text">
+                Sim. Todas as informações são tratadas com total sigilo e utilizadas apenas para fins de contato e proposta comercial. Não compartilhamos seus
+                dados com terceiros sem sua autorização.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="global-container">
+      <div class="footer__content">
+        <div class="footer__columns">
+          <div class="footer__column">
+            <h3 class="footer__column-title">NOSSOS PRODUTOS</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item"><a href="/consorcio" class="footer__link">Consórcio</a></li>
+              <li class="footer__list-item"><a href="/saude" class="footer__link">Plano de Saúde</a></li>
+              <li class="footer__list-item"><a href="/seguro" class="footer__link">Seguros</a></li>
+              <li class="footer__list-item"><a href="/seguro/auto" class="footer__link">Seguro Auto</a></li>
+              <li class="footer__list-item"><a href="/seguro/residencial" class="footer__link">Seguro Residencial</a></li>
+              <li class="footer__list-item"><a href="/seguro/vida" class="footer__link">Seguro de Vida</a></li>
+              <li class="footer__list-item"><a href="/seguro/responsabilidade-civil" class="footer__link">Responsabilidade Civil</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h3 class="footer__column-title">COMO FUNCIONA</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item"><a href="/como-funciona/consorcio" class="footer__link">Consórcio: Guia Completo</a></li>
+              <li class="footer__list-item"><a href="/como-funciona/saude" class="footer__link">Plano de Saúde: O Essencial</a></li>
+              <li class="footer__list-item"><a href="/como-funciona/seguro" class="footer__link">Entenda os Seguros</a></li>
+              <li class="footer__list-item"><a href="/perguntas-frequentes" class="footer__link">Perguntas Frequentes (FAQ)</a></li>
+              <li class="footer__list-item"><a href="/blog" class="footer__link">Nosso Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h3 class="footer__column-title">LEMONADE BRASIL</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item"><a href="/sobre-nos" class="footer__link">Sobre Nós</a></li>
+              <li class="footer__list-item"><a href="/carreiras" class="footer__link">Trabalhe Conosco</a></li>
+              <li class="footer__list-item"><a href="/parcerias" class="footer__link">Programa de Parceiros</a></li>
+              <li class="footer__list-item"><a href="/imprensa" class="footer__link">Imprensa</a></li>
+              <li class="footer__list-item"><a href="/avaliacoes" class="footer__link">Avaliações de Clientes</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h3 class="footer__column-title">SUPORTE</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item"><a href="/contato" class="footer__link">Fale Conosco</a></li>
+              <li class="footer__list-item"><a href="/sinistro" class="footer__link">Abertura de Sinistro</a></li>
+              <li class="footer__list-item"><a href="/central-ajuda" class="footer__link">Central de Ajuda</a></li>
+              <li class="footer__list-item"><a href="/transparencia" class="footer__link">Transparência</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook da Lemonade Brasil">
+              <svg viewBox="0 0 512 512" fill="currentColor" width="24" height="24">
+                <path
+                  d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V349.99H172.05v-93.9H209.25V221.02c0-38.64 23.44-59.9 58.45-59.9 16.63 0 32.43 2.95 32.43 2.95v36.13h-18.49c-18.41 0-24.13 11.41-24.13 23.18v28.28h42.14l-6.75 42.14h-35.39V501C413.31 482.38 504 379.78 504 256z" />
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Instagram da Lemonade Brasil">
+              <svg viewBox="0 0 448 512" fill="currentColor" width="24" height="24">
+                <path
+                  d="M224.1 127.3c-24.6 0-44.5 19.9-44.5 44.5s19.9 44.5 44.5 44.5 44.5-19.9 44.5-44.5-19.9-44.5-44.5-44.5zm105.7 169.5c-.6 0-1.2-.1-1.8-.1-7.1 0-14.2.8-21.2 2.5-16 3.8-31.5 9.4-46.3 16.9-38.3 19.2-76.3 33.4-110.1 38.3-4.8.7-9.5 1.1-14.3 1.1-16.7 0-33.4-2.8-50-8.3-15.6-5.3-30.7-12.7-44.9-22.1-38.6-25-70.8-60.6-91.8-97.8-21.7-39-33.3-79.6-34.8-120.3-1.6-43.1 8-84.3 28.5-121.2C54 26.5 92.4 1.3 140.2.1c48.8-1.2 96 11.4 139.7 34.6 39.5 21 72.8 51.5 95.8 88.5 24.3 39.2 37 81.6 36.3 124.7-.6 42.1-13.8 82-37.5 117.8-22.7 34.4-53.5 63.3-89.9 84.4-4.8 2.8-9.8 5.3-14.8 7.6-5.7 2.6-11.5 4.9-17.3 7-5.5 2-11.1 3.9-16.7 5.7-5.5 1.7-11.2 3.3-16.9 4.8-.4.1-.9.2-1.3.3zM224 202.9c-41.1 0-74.5-33.4-74.5-74.5s33.4-74.5 74.5-74.5 74.5 33.4 74.5 74.5-33.4 74.5-74.5 74.5zm106.8-93.5c-.2-.2-.4-.3-.6-.5-.5-.4-1.1-.9-1.6-1.3-1.4-1.1-2.9-2.2-4.4-3.2-1.3-1-.2-2.5 1.1-3.6 1-.8 2-1.5 3-2.3 2.5-1.9 4.9-3.8 7.4-5.7 1.1-.9 2.1-1.8 3.2-2.7 2.6-2.1 5.3-4.2 7.9-6.3.6-.5 1.3-1 1.9-1.5.3-.2.6-.4.9-.6l.7-.6c.2-.2.4-.3.6-.5.1-.1.2-.1.3-.2.4-.3.7-.6 1.1-.8.2-.1.3-.2.5-.3.4-.3.8-.5 1.2-.7.2-.1.3-.2.5-.3.4-.2.8-.4 1.2-.6.2-.1.3-.2.5-.2.4-.2.8-.4 1.2-.5.2-.1.3-.1.5-.2.4-.1.8-.3 1.2-.4.2-.1.3-.1.5-.1.4 0 .8-.1 1.2-.1.2 0 .3-.1.5-.1.4 0 .8 0 1.2 0 .2 0 .3 0 .5.1.4 0 .8.1 1.2.1.2 0 .3.1.5.1.4.1.8.2 1.2.3.2.1.3.1.5.2.4.1.8.3 1.2.4.2.1.3.2.5.3.4.3.7.6 1.1.8.2.1.3.2.5.3.4.3.8.5 1.2.7.2.1.3.2.5.3.4.3.8.4 1.2.6 2.6 2.1 5.3 4.2 7.9 6.3 1.1.9 2.1 1.8 3.2 2.7 2.5 1.9 4.9 3.8 7.4 5.7 1 .8 2 1.5 3 2.3 1.3 1.1 2.4 2.6 1.1 3.6-1.5 1.1-3 2.1-4.4 3.2-.5.4-1.1.9-1.6 1.3-.2.2-.4.3-.6.5zm-39.7 186.2c-3.1 0-6.1-.2-9.2-.5-5.3-.6-10.6-1.4-15.8-2.4-16.7-3.3-33-8-48.7-14.1-39.4-15.5-77.4-36.4-109.1-61.9-20.9-16.5-40.4-36-57.9-57.9-17-20.7-31.9-42.9-44.5-66.9-1.1-2.1-2.1-4.2-3.1-6.4-2.8-5.9-5.4-11.9-7.8-18-2-5.4-3.8-10.9-5.4-16.5-1.5-5-2.8-10-4-15.1-1-4.2-1.8-8.4-2.6-12.7-1.1-5.6-1.9-11.2-2.7-16.9-.7-5.5-1.2-11-1.6-16.6-.4-5.6-.6-11.2-.6-16.9 0-42.3 13.9-82.5 40.5-115.3 26.6-32.8 63-54.8 103.5-60.6 40.5-5.8 81.8-1.5 119.7 12.8 37.9 14.3 71.3 38.6 97.4 71.3 26.1 32.7 41.5 73.1 42.4 115.8.9 41.5-10.7 82.2-31.5 118.9-20.8 36.6-49.8 68.3-84.6 90.9-34.8 22.7-72.2 38.8-111.4 46.1z" />
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="LinkedIn da Lemonade Brasil">
+              <svg viewBox="0 0 448 512" fill="currentColor" width="24" height="24">
+                <path
+                  d="M416 32H32C14.3 32 0 46.3 0 64v384c0 17.7 14.3 32 32 32h384c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32zM135.5 416H74.3V192h61.2v224zm-30.6-258.9c-20.7 0-37.5-16.8-37.5-37.5s16.8-37.5 37.5-37.5 37.5 16.8 37.5 37.5-16.9 37.5-37.5 37.5zm276.1 258.9h-61.3V312c0-24.8-.4-56.6-34.5-56.6-34.6 0-39.9 27-39.9 54.9v105.7h-61.3V192h58.8v26.7h.8c8.6-16.4 29.8-33.8 61.2-33.8 65.4 0 77.4 42.9 77.4 98.7v113.8z" />
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="YouTube da Lemonade Brasil">
+              <svg viewBox="0 0 576 512" fill="currentColor" width="24" height="24">
+                <path
+                  d="M549.655 124.083c-6.281-23.65-24.787-42.08-48.432-48.36C447.167 64 288 64 288 64S128.833 64 74.777 75.723c-23.645 6.28-42.151 24.71-48.432 48.36-11.668 43.594-11.668 138.148-11.668 138.148s0 94.555 11.668 138.148c6.281 23.65 24.787 42.08 48.432 48.36C128.833 448 288 448 288 448s159.167 0 213.223-11.723c23.645-6.28 42.151-24.71 48.432-48.36 11.668-43.594 11.668-138.148 11.668-138.148s0-94.555-11.668-138.148zm-24.736 211.785L273.985 306.01L273.985 206.518l250.934 64.636z" />
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="TikTok da Lemonade Brasil">
+              <svg viewBox="0 0 448 512" fill="currentColor" width="24" height="24">
+                <path
+                  d="M448 209.91a210.02 210.02 0 0 1 -122.77-39.25v178.35A116.37 116.37 0 1 1 200.5 281.82v-32.31a81.92 81.92 0 0 0 49.1-153.26V0H200.5a134.89 134.89 0 0 0 -134.86 134.89v183.39A210.07 210.07 0 0 1 0 209.91v59.18A210.02 210.02 0 0 0 122.77 308.25v-178.35A116.37 116.37 0 1 1 247.5 230.18v32.31a81.92 81.92 0 0 0 -49.1 153.26V512H247.5a134.89 134.89 0 0 0 134.86-134.89V193.61A210.07 210.07 0 0 1 448 209.91z" />
+              </svg>
+            </a>
+          </div>
+          <div class="footer__contact">
+            <span class="footer__contact-item">0800 XXXX-XXXX</span> <span class="footer__contact-item">contato@lemonade.com.br</span>
+          </div>
+          <div class="footer__language-selector">
+            <img src="https://flagcdn.com/br.svg" alt="Bandeira do Brasil" class="footer__flag">
+            Brasil
+            <svg viewBox="0 0 320 512" fill="currentColor" width="16" height="16">
+              <path d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z" />
+            </svg>
+          </div>
+          <div class="footer__app-downloads">
+            <a href="#" class="footer__app-link">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Baixe na App Store">
+            </a>
+            <a href="#" class="footer__app-link">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Disponível no Google Play">
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__legal-info">
+          <span class="footer__legal-text">Lemonade Brasil, [Seu Endereço no Brasil, Ex: Av. Paulista, 1000 - São Paulo, SP]</span>
+          <div class="footer__legal-links">
+            <a href="/termos-de-uso" class="footer__legal-link">Termos de Uso</a>
+            <a href="/avisos-legais" class="footer__legal-link">Avisos Legais</a>
+            <a href="/politica-privacidade" class="footer__legal-link">Política de Privacidade</a>
+            <a href="/acessibilidade" class="footer__legal-link">Acessibilidade</a>
+            <a href="/lgpd" class="footer__legal-link">LGPD</a>
+          </div>
+        </div>
+        <p class="footer__disclaimer">
+          A Lemonade atua no Brasil como correspondente/representante de seguros e/ou consórcios. Nossos produtos são oferecidos por seguradoras e
+          administradoras de consórcio parceiras devidamente autorizadas pelos órgãos reguladores (SUSEP, Banco Central, ANS). A aprovação de propostas está
+          sujeita à análise de risco de cada parceiro. Consulte as condições gerais dos produtos no site.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
