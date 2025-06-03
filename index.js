@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // 
- document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
   const faqItems = document.querySelectorAll('.faq-item');
 
   faqItems.forEach(item => {
@@ -114,4 +114,37 @@ document.addEventListener('DOMContentLoaded', () => {
     freeMode: true,
     freeModeMomentum: false,
   });
+
+  function animateCounter(element, duration = 1000) {
+    const target = parseInt(element.getAttribute('data-target'), 10);
+    const startTime = performance.now();
+
+    function update(currentTime) {
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      const value = Math.floor(progress * target);
+      element.textContent = value + '%';
+
+      if (progress < 1) {
+        requestAnimationFrame(update);
+      } else {
+        element.textContent = target + '%';
+      }
+    }
+
+    requestAnimationFrame(update);
+  }
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const cards = entry.target.querySelectorAll('.percent');
+        cards.forEach(card => animateCounter(card));
+        obs.unobserve(entry.target); 
+      }
+    });
+  }, { threshold: 0.5 }); 
+
+  observer.observe(document.getElementById('main-challenges'));
+
 });
