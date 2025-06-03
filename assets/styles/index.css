@@ -65,9 +65,10 @@
   max-width: 45%;
 }
 
-.experts__button{
+.experts__button {
   font-size: 1.8rem;
   padding: 20px 44px;
+  margin-bottom: 40px;
 }
 
 .hero__button {
@@ -159,12 +160,14 @@
   width: 40px;
   height: 40px;
 }
+
 @media (min-width: 576px) {
   .star-icon {
     width: 52px;
     height: 52px;
   }
 }
+
 @media (min-width: 767px) {
   .star-icon {
     width: 120px;
@@ -271,13 +274,13 @@
 }
 
 .bundle-section__content {
-	width: 100%;
+  width: 100%;
 }
 
 .bundle-section__content h3 {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 40px;
 }
 
@@ -299,14 +302,14 @@
   padding: 60px 0;
 }
 
-.main-challenges-cards{
+.main-challenges-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 20px;
 }
 
-.main-challenges-card{
+.main-challenges-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -319,12 +322,12 @@
   width: 256px;
 }
 
-.main-challenges-card label{
+.main-challenges-card label {
   font-size: 1.6rem;
 }
 
 
-.main-challenges-card p{
+.main-challenges-card p {
   font-size: 3rem;
   font-weight: bold;
   margin-top: 10px;
@@ -363,6 +366,88 @@
   font-weight: bold;
 }
 
+.real-reductions {
+  background: var(--primary-color);
+  color: var(--white-color);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.real-reductions-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.real-reductions-card {
+  display: flex;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 47px 46px -27px,
+    rgba(0, 0, 0, 0.06) 0px 2px 12px 0px;
+  padding: 2rem;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-width: 300px;
+  margin: 20px;
+}
+
+.real-reductions-card-header {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.real-reductions-amounts {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.real-reductions-amounts div {
+  display: flex;
+  flex-direction: column;
+}
+
+.real-reductions-amounts-old {
+  text-decoration: line-through;
+  color: #64748b;
+  font-size: 1.5rem;
+}
+
+.real-reductions-amounts-new {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 10px;
+  color: var(--success);
+}
+
+.real-reductions-percentage {
+  font-size: 1.3rem;
+  color: #475569;
+  text-align: right;
+}
+
+@media (prefers-color-scheme: dark) {
+  .real-reductions-card {
+    background: #1e293b;
+  }
+
+  .real-reductions-amounts-old {
+    color: #94a3b8;
+  }
+
+  .real-reductions-percentage {
+    color: #cbd5e1;
+  }
+
+  .real-reductions-progress {
+    background: #475569;
+  }
+}
+
 @media (min-width: 768px) {
   .bundle-section__title {
     font-size: 38px;
@@ -380,7 +465,8 @@
 
 /* Instant Everything Section */
 .instant-everything-section {
-  background-color: #f7f7f7; /* Cor de fundo semelhante à imagem */
+  background-color: #f7f7f7;
+  /* Cor de fundo semelhante à imagem */
   padding: 80px 20px 0;
   text-align: center;
   overflow: hidden;
@@ -427,22 +513,32 @@
 .instant-everything-info--right::after {
   content: '';
   position: absolute;
-  width: 100px; /* Comprimento da linha */
-  height: 50px; /* Altura para a curva */
-  border: 2px dashed #999; /* Linha tracejada */
-  border-color: transparent #999 #999 transparent; /* Apenas lado direito e inferior */
-  border-radius: 0 0 100px 0; /* Borda arredondada para a curva */
-  bottom: -40px; /* Posição abaixo do texto */
+  width: 100px;
+  /* Comprimento da linha */
+  height: 50px;
+  /* Altura para a curva */
+  border: 2px dashed #999;
+  /* Linha tracejada */
+  border-color: transparent #999 #999 transparent;
+  /* Apenas lado direito e inferior */
+  border-radius: 0 0 100px 0;
+  /* Borda arredondada para a curva */
+  bottom: -40px;
+  /* Posição abaixo do texto */
 }
 
 .instant-everything-info--left::after {
-  right: -50px; /* Posição da linha em relação ao texto */
-  transform: rotate(90deg); /* Rotaciona para apontar para o iPhone */
+  right: -50px;
+  /* Posição da linha em relação ao texto */
+  transform: rotate(90deg);
+  /* Rotaciona para apontar para o iPhone */
 }
 
 .instant-everything-info--right::after {
-  left: -50px; /* Posição da linha em relação ao texto */
-  transform: rotate(180deg); /* Rotaciona para apontar para o iPhone */
+  left: -50px;
+  /* Posição da linha em relação ao texto */
+  transform: rotate(180deg);
+  /* Rotaciona para apontar para o iPhone */
 }
 
 
