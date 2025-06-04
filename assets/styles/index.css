@@ -369,6 +369,7 @@
   object-fit: cover;
   height: 160px;
   margin-bottom: 20px;
+  opacity: 0.5;
 }
 
 .bundle-card__title {
@@ -657,6 +658,13 @@
   display: block;
 }
 
+.faq-item__toggle-icon {
+  font-size: 2rem;
+  font-weight: bold;
+  user-select: none;
+
+}
+
 .faq-item.active .faq-item__toggle-icon {
-  transform: rotate(180deg);
+  transform: rotate(90deg);
 }

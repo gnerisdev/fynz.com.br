@@ -37,24 +37,12 @@ document.addEventListener('DOMContentLoaded', () => {
       faqItems.forEach(otherItem => {
         if (otherItem !== item && otherItem.classList.contains('active')) {
           otherItem.classList.remove('active');
-          otherItem.querySelector('.faq-item__toggle-icon').textContent = '+';
         }
       });
 
       item.classList.toggle('active');
-      const toggleIcon = item.querySelector('.faq-item__toggle-icon');
-      if (item.classList.contains('active')) {
-        toggleIcon.textContent = '-';
-      } else {
-        toggleIcon.textContent = '+';
-      }
     });
   });
-
-  if (faqItems.length > 0) {
-    faqItems[0].classList.add('active');
-    faqItems[0].querySelector('.faq-item__toggle-icon').textContent = '-';
-  }
 });
 
 // Slide Swiper
