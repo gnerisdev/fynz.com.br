@@ -67,7 +67,7 @@
   bottom: 31px;
 }
 
-.hero__background .left .rigth img {
+.hero__background .left img {
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
 }
