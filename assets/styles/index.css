@@ -32,12 +32,12 @@
   line-height: 1.1;
 }
 
-.hero__background{
- display: flex;
- position: absolute;
- justify-content: space-between;
- width: 100%;
- overflow: auto;
+.hero__background {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
 }
 
 .hero__background .left {
@@ -48,7 +48,7 @@
   /* overflow: hidden; */
 }
 
-.hero-img-car{
+.hero-img-car {
   display: flex;
   position: absolute;
   top: 260px;
@@ -65,6 +65,16 @@
 .hero__background .left img:nth-child(2) {
   position: absolute;
   bottom: 31px;
+}
+
+.hero__background .left .rigth img {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.hero__background .rigth img {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
 }
 
 
@@ -131,6 +141,16 @@
 
   .hero__background-image--right {
     right: -10%;
+  }
+
+  .hero__background .left img {
+    opacity: 0.2;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .hero__background .rigth img {
+    opacity: 0.2;
+    transition: opacity 0.5s ease-in-out;
   }
 }
 
@@ -287,6 +307,12 @@
   }
 }
 
+@media (max-width: 570px) {
+  .bundle-card__description {
+    display: none;
+  }
+}
+
 /* Bundle Section */
 .bundle-section {
   padding: 40px 20px;
@@ -388,7 +414,7 @@
 
 .bundle-card__icon {
   object-fit: cover;
-  height: 160px;
+  height: 130px;
   margin-bottom: 20px;
   opacity: 0.5;
 }
@@ -517,7 +543,8 @@
 
   .bundle-card {
     flex: 1;
-    max-width: 300px;
+    max-width: 256px;
+    max-height: 377px;
   }
 }
 
