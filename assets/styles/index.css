@@ -427,8 +427,6 @@
 .real-reductions {
   background: var(--primary-color);
   color: var(--white-color);
-  border-radius: 8px;
-  padding: 10px;
 }
 
 .real-reductions-container {
