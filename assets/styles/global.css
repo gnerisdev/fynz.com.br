@@ -56,6 +56,12 @@ html {
   line-height: 2.2rem;
 }
 
+.global-text label{
+  font-size: 3rem;
+  line-height: 2.2rem;
+  font-weight: bold;
+}
+
 /*******************************
 *********** Button *************
 ********************************/
