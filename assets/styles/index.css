@@ -415,12 +415,18 @@
   margin-top: 10px;
 }
 
+.bundle-card.active {
+  opacity: 1;
+}
+
 .bundle-card {
   width: 256px;
   border-radius: 8px;
   padding: 30px 20px;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
+  opacity: 0;
+  transition: all 1s ease;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 47px 46px -27px,
     rgba(0, 0, 0, 0.06) 0px 2px 12px 0px;
   display: flex;
@@ -831,4 +837,29 @@
   padding: 10px;
   border-radius: 50%;
   background-color: #f7f7f7;
+}
+
+.image {
+  display: flex;
+  position: relative;
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.image.left {
+  left: -200px;
+}
+
+.image.rigth {
+  right: -200px;
+}
+
+.image.active.left {
+  left: 10px;
+  opacity: 1;
+}
+
+.image.active.rigth {
+  right: 10px;
+  opacity: 1;
 }

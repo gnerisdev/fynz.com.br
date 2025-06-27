@@ -123,16 +123,27 @@ document.addEventListener('DOMContentLoaded', () => {
     requestAnimationFrame(update);
   }
 
-  const observer = new IntersectionObserver((entries, obs) => {
+  const section = document.querySelector('#section-how-works');
+  const sectionSmartSolutions = document.querySelector('#smart-solutions');
+  const imagens = section.querySelectorAll('.image');
+  const bundleCard = sectionSmartSolutions.querySelectorAll('.bundle-card');
+
+  const observerImages = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        const cards = entry.target.querySelectorAll('.percent');
-        cards.forEach(card => animateCounter(card));
-        obs.unobserve(entry.target); 
+        imagens.forEach(img => img.classList.add('active'));
+        bundleCard.forEach(card => {
+          card.classList.add('active')});
+      }else {
+        imagens.forEach(img => img.classList.remove('active'));
+        bundleCard.forEach(card => card.classList.remove('active'));
       }
     });
-  }, { threshold: 0.1 }); 
+  }, {
+    threshold: 0.5
+  });
 
-  observer.observe(document.getElementById('main-challenges'));
+  observerImages.observe(section);
+  observerImages.observe(sectionSmartSolutions);
 
 });
